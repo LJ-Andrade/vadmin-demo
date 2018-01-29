@@ -2,8 +2,12 @@
 	<div class="navbar-wrapper">
 		<div class="navbar-header">
 			<ul class="nav navbar-nav">
-				<li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
-				<li class="nav-item"><a href="{{ url('vadmin') }}" class="navbar-brand nav-link"><img alt="Vadmin" src="{{ asset('vadmin-ui/app-assets/images/logo/app-logo.png') }}" data-expand="{{ asset('vadmin-ui/app-assets/images/logo/app-logo.png') }}" data-collapse="{{ asset('vadmin-ui/app-assets/images/logo/app-logo-small.png') }}" class="brand-logo"></a></li>
+				<li class="nav-item mobile-menu hidden-md-up float-xs-left">
+					<a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
+				<li class="nav-item"><a href="{{ url('vadmin') }}" class="navbar-brand nav-link">
+					<img alt="Vadmin" src="{{ asset('vadmin-ui/app-assets/images/logo/app-logo.png') }}" 
+					data-expand="{{ asset('vadmin-ui/app-assets/images/logo/app-logo.png') }}" 
+					data-collapse="{{ asset('vadmin-ui/app-assets/images/logo/app-logo-small.png') }}" class="brand-logo"></a></li>
 				<li class="nav-item hidden-md-up float-xs-right"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="icon-ellipsis pe-2x icon-icon-rotate-right-right"></i></a></li>
 			</ul>
 		</div>
@@ -85,6 +89,9 @@
 	<ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
 		<li class="nav-item {{ Menu::activeMenu('vadmin') }}"><a href="{{ url('vadmin')}}"><i class="icon-home3"></i><span class="menu-title">Inicio</span></a>
 		</li>
+		<li class="navigation-header"><span data-i18n="nav.category.support">Gestión de Contenido</span>
+			<i data-toggle="tooltip" data-placement="right" data-original-title="Support" class="icon-ellipsis icon-ellipsis"></i>
+		</li>
 		{{--  Tienda  --}}
 		{{--  <li class="nav-item has-sub {{ Menu::activeMenu('vadmin-tienda') }}"><a href="#"><i class="icon-cart4"></i><span data-i18n="nav.menu_levels.main" class="menu-title">Tienda</span></a>
 			<ul class="menu-content" style="">
@@ -127,10 +134,10 @@
 						<li class="is-shown {{ Menu::activeMenu('cat_tags') }}"><a href="{{ route('cat_tags.create') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-plus-round"></i> Nueva Etiqueta</a></li>
 					</ul>
 				</li>
-				<li class="has-sub is-shown {{ Menu::activeMenu('cat_atribute1') }}"><a href="#" data-i18n="nav.menu_levels.second_level_child.main" class="menu-item">Cualidades</a>
+				<li class="has-sub is-shown {{ Menu::activeMenu('cat_atribute1') }}"><a href="#" data-i18n="nav.menu_levels.second_level_child.main" class="menu-item">Atributos</a>
 					<ul class="menu-content" style="">
 						<li class="is-shown {{ Menu::activeMenu('cat_atribute1') }}"><a href="{{ route('cat_atribute1.index') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-list"></i> Listado</a></li>
-						<li class="is-shown {{ Menu::activeMenu('cat_atribute1') }}"><a href="{{ route('cat_atribute1.create') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-plus-round"></i> Nuevo Talle</a></li>
+						<li class="is-shown {{ Menu::activeMenu('cat_atribute1') }}"><a href="{{ route('cat_atribute1.create') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-plus-round"></i> Nuevo Atributo</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -154,15 +161,18 @@
 				</li>
 			</ul>
 		</li>  --}}
-
+{{--  
 		<li class="nav-item"><a href="#"><i class="icon-cog"></i><span data-i18n="nav.page_layouts.main" class="menu-title">Administración</span></a>
 			<ul class="menu-content" style="">
-				<li class="has-sub is-shown UsersLi"><a href="#" data-i18n="nav.menu_levels.second_level_child.main" class="menu-item"><i class="icon-users2"></i>	Usuarios</a>
-					<ul class="menu-content" style="">
-						<li class="is-shown UsersList"><a href="{{ route('users.index') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-list"></i> Listado</a></li>
-						<li class="is-shown UsersNew"><a href="{{ route('users.create') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-plus-round"></i> Nuevo Usuario</a></li>
-					</ul>
-				</li>
+			</ul>
+		</li>  --}}
+		<li class="navigation-header"><span data-i18n="nav.category.support">Administración</span>
+			<i data-toggle="tooltip" data-placement="right" data-original-title="Support" class="icon-ellipsis icon-ellipsis"></i>
+		</li>
+		<li class="has-sub is-shown UsersLi"><a href="#" data-i18n="nav.menu_levels.second_level_child.main" class="menu-item"><i class="icon-users2"></i>	Usuarios</a>
+			<ul class="menu-content" style="">
+				<li class="is-shown UsersList"><a href="{{ route('users.index') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-list"></i> Listado</a></li>
+				<li class="is-shown UsersNew"><a href="{{ route('users.create') }}" data-i18n="nav.menu_levels.second_level_child.third_level" class="menu-item"><i class="icon-plus-round"></i> Nuevo Usuario</a></li>
 			</ul>
 		</li>
 		<li class="{{ Menu::activeMenu('mensajes_recibidos') }}"><a href="{{ url('vadmin/mensajes_recibidos') }}" class="menu-item"><i class="icon-envelop"></i> Mensajes 
@@ -171,12 +181,20 @@
 			@endif
 		</a></li>
 
+		<li class="navigation-header"><span data-i18n="nav.category.support">Secciones Públicas</span>
+			<i data-toggle="tooltip" data-placement="right" data-original-title="Support" class="icon-ellipsis icon-ellipsis"></i>
+		</li>
+		<li class="nav-item"><a href="{{ url('/') }}"><i class="icon-feed"></i><span class="menu-title">Web</span></a></li>
+		<li class="nav-item"><a href="{{ url('/tienda') }}"><i class="icon-cart4"></i><span class="menu-title">Catálogo</span></a></li>
 
-		<li class="navigation-header"><span data-i18n="nav.category.support">Ayuda</span><i data-toggle="tooltip" data-placement="right" data-original-title="Support" class="icon-ellipsis icon-ellipsis"></i>
+		<li class="navigation-header"><span data-i18n="nav.category.support">Ayuda</span>
+			<i data-toggle="tooltip" data-placement="right" data-original-title="Support" class="icon-ellipsis icon-ellipsis"></i>
 		</li>
-		<li class="nav-item {{ Menu::activeMenu('help') }}"><a href="{{ url('vadmin/help') }}"><i class="icon-support"></i><span class="menu-title">Soporte</span></a>
+		<li class="nav-item {{ Menu::activeMenu('help') }}"><a href="{{ url('vadmin/help') }}">
+			<i class="icon-support"></i><span class="menu-title">Soporte</span></a>
 		</li>
-		<li class="nav-item {{ Menu::activeMenu('docs') }}"><a href="{{ url('vadmin/docs') }}"><i class="icon-document-text"></i><span class="menu-title">Sobre Vadmin</span></a>
+		<li class="nav-item {{ Menu::activeMenu('docs') }}"><a href="{{ url('vadmin/docs') }}">
+			<i class="icon-document-text"></i><span class="menu-title">Sobre Vadmin</span></a>
 		</li>
 	</ul>
 	</div>

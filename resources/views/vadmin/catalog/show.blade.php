@@ -19,9 +19,10 @@
         @component('vadmin.components.container')
             @slot('title')
                 </b><h1>{!! $article->name !!}</h1>
+				<p class="text-muted">Código: #{!! $article->code !!} </p>
             @endslot
             @slot('content')
-            	<b>Descripción:</b> <p>{!! $article->description !!}</p>
+				<b>Descripción:</b> <p>{!! $article->description !!}</p>
 				<hr class="softhr">
 				<div class="row">
 					<div class="col-md-3">

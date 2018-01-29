@@ -117,6 +117,7 @@ Route::get('categories/{name}', ['uses' => 'WebController@searchCategory', 'as' 
 Route::get('tag/{name}', ['uses' => 'WebController@searchTag', 'as'   => 'web.search.tag']);
 Route::post('mail_sender', 'WebController@mail_sender');
 
+
 /*
 |--------------------------------------------------------------------------
 | VADMIN / SECTIONS

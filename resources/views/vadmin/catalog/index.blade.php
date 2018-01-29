@@ -52,16 +52,10 @@
 @section('content')
 	<div class="list-wrapper">
 		{{-- Search --}}
-		{{-- Test --}}
-		<div id="TestBox" class="col-xs-12 test-box Hidden">
-		</div>
 		<div class="row">
 			@component('vadmin.components.list')
 				@slot('title', 'Listado de Items')
-					@if($articles->count() == '0')
-						@slot('tableTitles', '')
-						@slot('tableContent', '')
-					@else
+					@if(!$articles->count() == '0')
 					@slot('tableTitles')
 						<th class="w-50">
 							@component('vadmin.components.checkAllCheckBox')
@@ -72,7 +66,7 @@
 						<th>Stock</th>
 						<th>Precio</th>
 						<th>Oferta (%)</th>
-						<th>Fecha de Creación</th>
+						<th>Categoría</th>
 						<th>Estado</th>
 					@endslot
 					@slot('tableContent')
@@ -92,7 +86,7 @@
 										<img src="{{ asset('webimages/gen/catalog-gen.jpg') }}">
 									@endif
 								</td>
-								<td class="w-50">{{ $item->code }}</td>
+								<td class="w-50">#{{ $item->code }}</td>
 								<td class="show-link max-text"><a href="{{ url('vadmin/catalogo/'.$item->id) }}">{{ $item->name }}</a></td>
 								{{--  STOCK  --}}
 								<td class="Modificable-Stock-Input modificable-input">
@@ -124,7 +118,7 @@
 									<div class="UpdateDiscountBtn action-button Hidden" data-id="{{ $item->id }}"><i class="icon-checkmark2"></i></div>
 								</td>
 								{{--  DATE   --}}
-								<td class="w-200">{{ transDateT($item->created_at) }}</td>
+								<td class="w-200">{{ $item->category->name }}</td>
 								<td class="w-50 pad0 centered">
 									@if($item->status == '1')
 										<label class="switch">
@@ -142,6 +136,15 @@
 								</td>
 							</tr>					
 						@endforeach
+						@else 
+							@slot('tableTitles')
+								<th></th>
+							@endslot
+							@slot('tableContent')
+								<tr>
+									<td class="w-200">No se han encontrado items</td>
+								</tr>
+							@endslot
 						@endif
 				@endslot
 			@endcomponent

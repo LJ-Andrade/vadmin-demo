@@ -3,6 +3,7 @@
 		<div class="row inner">
 			<div class="col-md-12 contact-form">
 				<h2 sty>FORMULARIO DE CONTACTO</h2>
+				<p>Puede dejar aquí mensajes de prueba</p>
 			{{-- <h1>CONTACTANOS !</h1> --}}
 			{{--  <img src="{{asset('webimages/logos/main-logo.png')}}" class="wow animated zoomIn" data-wow-delay="1.5s" data-wow-duration="3s">  --}}
 				<div class="inner">

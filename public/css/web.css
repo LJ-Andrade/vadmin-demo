@@ -1195,12 +1195,12 @@ ul {
   }
   .navbar.home-nav .navbar-nav > li:hover a {
     border: 1px solid #03c3ad;
-    color: #fff;
+    color: #383838;
   }
   .navbar.home-nav .navbar-nav > li:hover a.contacto {
     background-color: #3356e3;
     border: 0;
-    color: #fff;
+    color: #383838;
   }
   .navbar.change-nav {
     background-color: #fff;
@@ -1962,7 +1962,7 @@ ul {
   border: 0;
   border-radius: 0;
   background-color: transparent;
-  border: 1px solid #383838;
+  border: 1px solid rgba(173, 173, 173, 0.5);
   color: #383838;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1981,7 +1981,7 @@ ul {
 }
 
 .contact-section .inner .contact-form .inner .contactBtn:hover {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid #fff;
   color: #fff;
 }

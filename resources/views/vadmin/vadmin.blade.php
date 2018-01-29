@@ -1,6 +1,6 @@
 @extends('layouts.vadmin.main')
 
-@section('title', 'Vadmin | ')
+@section('title', 'Vadmin | Inicio')
 
 @section('header_title', 'Inicio | ')
 

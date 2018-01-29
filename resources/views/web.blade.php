@@ -14,6 +14,7 @@
         <div class="main-info wow animated fadeIn" data-wow-delay="0s" data-wow-duration="1s">
             <img src="{{ asset('webimages/logos/main-logo.png') }}">
             <h1>Sitio de Demostración</h1>
+            <a href="{{ url('vadmin') }}" class="btn btnBlue">Ir al Administrador (Vadmin)</a>
         </div>
     </div>
 

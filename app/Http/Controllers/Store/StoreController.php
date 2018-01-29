@@ -10,6 +10,7 @@ use App\CatalogCategory;
 use App\CatalogArticle;
 use App\CatalogImage;
 use App\CatalogAtribute1;
+use App\CatalogTag;
 use App\CatalogFav;
 use App\Customer;
 use App\Shipping;
@@ -29,38 +30,49 @@ class StoreController extends Controller
     public function __construct()
     {
         //$this->middleware('auth:customer');
-        // $customer = auth()->guard('customer')->user();
-        
+        // $customer = auth()->guard('customer')->user();     
     }
     
-    public function index()
-    {
-        $articles = CatalogArticle::orderBy('id', 'DESCC')->where('status','1')->paginate(15);
-        $activeCart = $this->getActiveCart();
+    public function index(Request $request)
+    {   
+        if($request->category)
+        {
+            $articles = CatalogArticle::orderBy('id', 'DESC')->active()->where('category_id', $request->category)->paginate(15);
+        } elseif($request->atributes1 || $request->tags)
+        {
+            $articles = CatalogArticle::orderBy('id', 'DESCC')->active()->paginate(15);
+        } else {
+            $articles = CatalogArticle::orderBy('id', 'DESCC')->active()->paginate(15);
+        }
+
+
         // $articles->each(function($articles){
-        //     $articles->category;
-        //     $articles->user;
-        // });
+            //     $articles->category;
+            //     $articles->user;
+            // });
         $user       = auth()->guard('customer')->user();
         $categories = CatalogCategory::all();
-        $atributes1 = CatalogAtribute1::orderBy('id', 'ASC')->pluck('name', 'id');
+        $tags       = CatalogTag::orderBy('id', 'ASC')->select('name', 'id')->get();
+        $atributes1 = CatalogAtribute1::orderBy('id', 'ASC')->select('name', 'id')->get();
+            
+        $activeCart = $this->getActiveCart();
         $favs       = $this->getCustomerFavs();
 
-    return view('store.index')
-        ->with('articles', $articles)
-        ->with('atributes1', $atributes1)
-        ->with('categories', $categories)
-        ->with('user', $user)
-        ->with('favs', $favs)
-        ->with('activeCart', $activeCart);
+        return view('store.index')
+            ->with('articles', $articles)
+            ->with('atributes1', $atributes1)
+            ->with('categories', $categories)
+            ->with('tags', $tags)
+            ->with('user', $user)
+            ->with('favs', $favs)
+            ->with('activeCart', $activeCart);
     }
-
     
     public function show(Request $request)
     {
         $article = CatalogArticle::findOrFail($request->id);
         $activeCart = $this->getActiveCart();
-       
+        
         $user    = auth()->guard('customer')->user();
         $isFav   = CatalogFav::where('customer_id', '=', $user->id)->where('article_id', '=', $article->id)->get();
         if(!$isFav->isEmpty()){
@@ -74,6 +86,21 @@ class StoreController extends Controller
         ->with('user', $user)
         ->with('activeCart', $activeCart);
     }
+
+    /*
+    |--------------------------------------------------------------------------
+    | SEARCHS
+    |--------------------------------------------------------------------------
+    */
+
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | SHOP and CHECKOUT LOGIC
+    |--------------------------------------------------------------------------
+    */
+
 
     // Checkout Step 1
     

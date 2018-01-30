@@ -20,7 +20,7 @@
                     <h3><i class="icon-fast-forward2"></i> ¿ Qué es <b>VADMIN</b> ?</h3>
                     <p> 
                         Vadmin es un gestor de contenido y administración para empresas desarrollado por <b><a href="https://vimana.studio" style="color: blue">Vimana Studio.</a></b>  <br>
-                        El mismo está cimentado sobre una potente base potenciada por la tecnología de Laravel.
+                        Está potenciado por la tecnología de Laravel - PHP7.0.
                     </p>
                     <hr class="softhr">
                     <h3><i class="icon-fast-forward2"></i>  ¿ Qué puede hacer <b>VADMIN</b> ?</h3>

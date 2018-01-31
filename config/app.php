@@ -170,7 +170,7 @@ return [
         // To send data to all views (Categories, tags)
         App\Providers\ComposerServiceProvider::class,
         // Debug Bar
-        Barryvdh\Debugbar\ServiceProvider::class,
+        //Barryvdh\Debugbar\ServiceProvider::class,
 
         /*
          * Application Service Providers...

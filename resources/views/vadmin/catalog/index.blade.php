@@ -15,6 +15,17 @@
 			{{-- Actions --}}
 			<div class="list-actions">
 				<a href="{{ route('catalogo.create') }}" class="btn btnBlue"><i class="icon-plus-round"></i>  Nuevo Item</a>
+				{{--  Actions  --}}
+				<div class="btn-group">
+					<button type="button" class="btn dropdown-toggle btnBlue" 
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Acciones</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="{{ route('vadmin.exportViewPdf', ['view' => 'vadmin.catalog.invoice', 'model' => 'CatalogArticle', 'filename' => 'catalogo']) }}">Descargar Pdf</a>
+						<a class="dropdown-item" href="#">Descargar Excel</a>
+						{{--  <div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>  --}}
+					</div>
+				</div>
 				<button id="SearchFiltersBtn" class="btn btnBlue"><i class="icon-ios-search-strong"></i></button>
 				{{-- Edit --}}
 				<a href="#" id="EditBtn" class="btn btnGreen Hidden"><i class="icon-pencil2"></i> Editar</a>

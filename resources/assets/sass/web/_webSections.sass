@@ -100,7 +100,120 @@
 
 //------------ HOME MID SLIDER ------------- //
 
+.home-mid-slider
+	padding: 60px 10px
+	.inner-text
+		padding-top: 40px
+		font-size: 1.5rem
+		line-height: 2.1rem
 
+
+//------------ THIRD SECTION ------------- //
+.home-section-3
+	background-color: $back-color
+	padding: 50px 10px
+	text-align: center
+	.col-md-3
+		padding: 0
+	.text
+		padding: 20px
+		p
+			color: #fff
+			font-size: 1.2rem
+	.divisor
+		max-width: 100%
+
+//--------- FOURTH SECTION ------------- //
+.service-item
+	padding: 50px 10px
+
+.our-services
+	padding: 40px 0 
+	background-color: #f9f9f9
+	color: $back-color2
+	.inner
+		overflow: hidden
+		.column1
+			img
+				max-width: 100%
+		.column2
+			p, h1
+				text-align: left
+	h1
+		text-align: center
+	&:hover
+		cursor: move
+		cursor: grab
+		cursor: -moz-grab
+		cursor: -webkit-grab
+
+.swiper-container-services
+	.swiper-slide 
+		max-height: none
+		
+.our-works
+	padding: 40px 5px 30px
+	background-color: #fff
+	color: $back-color
+	text-align: center
+	.inner
+		padding: 20px 20px 30px
+		margin: auto
+		text-align: right
+		h1
+			line-height: 3.3rem
+			margin-bottom: 25px
+		p
+			line-height: 1.5rem
+			font-size: 1.4rem
+		p.first
+			margin-bottom: 20px
+		p.second
+			margin-bottom: 10px
+
+		object,img
+			max-width: 100%
+		span
+			font-size: 3rem
+		.btn
+			margin-top: 20px
+			font-size: 1.5rem
+	.inner-mobile
+			display: none
+	.inner-desk
+
+@media (max-width: 991px)
+	.our-works
+		.inner
+			padding: 10px 20px 0 0 
+			h1
+				margin-top: 0
+				margin-bottom: 5px
+				line-height: 2.8rem
+				font-size: 2rem
+			p
+				font-size: 1.2rem
+				line-height: 1.2rem
+
+@media (max-width: 764px)
+	.our-works
+		.inner
+			padding: 5px
+			text-align: left
+			h1
+				margin-top: 0
+				line-height: 2.8rem
+				font-size: 2rem
+			p
+				font-size: 1.2rem
+				line-height: 1.2rem
+		.inner-mobile
+			display: block
+			text-align: center
+			padding-bottom: 30px
+		.inner-desk
+			display: none
+				
 ////////////////////////////////////////
 //                                    //
 //              PORTFOLIO             //
@@ -410,34 +523,40 @@ $nav_dark3: #444450
 //                                    //
 ////////////////////////////////////////
 
-$ph-text: 1.1rem
-$ph-color: #383838
+$ph-text: 1.3rem
+$ph-color: #f9f9f9
 $ph-font: $font2
-$ph-weight: 300
+$ph-weight: 400
 
 .contact-section
-
-
+	background: rgba(26,212,190,1)
+	background: -moz-linear-gradient(-45deg, rgba(26,212,190,1) 0%, rgba(51,86,227,1) 100%)
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(26,212,190,1)), color-stop(100%, rgba(51,86,227,1)))
+	background: -webkit-linear-gradient(-45deg, rgba(26,212,190,1) 0%, rgba(51,86,227,1) 100%)
+	background: -o-linear-gradient(-45deg, rgba(26,212,190,1) 0%, rgba(51,86,227,1) 100%)
+	background: -ms-linear-gradient(-45deg, rgba(26,212,190,1) 0%, rgba(51,86,227,1) 100%)
+	background: linear-gradient(135deg, rgba(26,212,190,1) 0%, rgba(51,86,227,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ad4be', endColorstr='#3356e3', GradientType=1 )
 	padding: 30px 5px 60px
 	.contact-data
 		text-align: center
 		padding: 25px 0 
 		span.mail
 			font-size: 2.5rem
-			color: #383838
+			color: #fff
 		.phone
 			font-size: 2rem
-			color: #383838
+			color: #fff
 			margin-top: 20px
 	.contact-head-data
-		color: #383838
+		color: #fff
 		text-align: left
 		display: inline-block
 		width: 100%
 		margin-top: 25px
 		margin-bottom: 40px
 		>div
-			border-right: 1px solid #383838
+			border-right: 1px solid #fff
 			padding: 0 30px
 			&:last-child
 				border: 0
@@ -458,76 +577,76 @@ $ph-weight: 300
 		@include flex-center
 		.contact-form
 			max-width: 880px
-			.inner
-				form
-					color: #383838
-					padding: 20px
-					>.col-md-6
-						padding: 0
-					.form-group
-						margin-bottom: 0
-					// Chrome/Opera/Safari
-					::-webkit-input-placeholder 
-						color: $ph-color
-						font-size: $ph-text
-						font-family: $ph-font
-						font-weight: $ph-weight
-					// Firefox 19+
-					::-moz-placeholder
-						color:  $ph-color
-						font-size: $ph-text
-						font-family: $ph-font
-						font-weight: $ph-weight
-					//IE 10+
-					::-ms-input-placeholder
-						color: $ph-color
-						font-size: $ph-text
-						font-family: $ph-font
-						font-weight: $ph-weight
-					//Firefox 18-
-					::-moz-placeholder
-						color:  $ph-color
-						font-size: $ph-text
-						font-family: $ph-font
-						font-weight: $ph-weight
-				input
-					height: 40px
-				input,textarea
-					border: 0
-					border-radius: 0
+			form
+				// background-color: rgba(206, 206, 206, 0.2)
+				// @include box-shadow-floor
+				color: #fff
+				padding: 20px
+				>.col-md-6
+					padding: 0
+				.form-group
+					margin-bottom: 0
+				// Chrome/Opera/Safari
+				::-webkit-input-placeholder 
+					color: $ph-color
+					font-size: $ph-text
+					font-family: $ph-font
+					font-weight: $ph-weight
+				// Firefox 19+
+				::-moz-placeholder
+					color:  $ph-color
+					font-size: $ph-text
+					font-family: $ph-font
+					font-weight: $ph-weight
+				//IE 10+
+				::-ms-input-placeholder
+					color: $ph-color
+					font-size: $ph-text
+					font-family: $ph-font
+					font-weight: $ph-weight
+				//Firefox 18-
+				::-moz-placeholder
+					color:  $ph-color
+					font-size: $ph-text
+					font-family: $ph-font
+					font-weight: $ph-weight
+			input
+				height: 70px
+			input,textarea
+				border: 0
+				border-radius: 0
+				background-color: transparent
+				border: 1px solid rgba(255,255,255,.5)
+				color: #fff
+				box-shadow: none
+				font-size: 1.5rem
+			.contactBtn
+				border-radius: 0
+				padding: 5px 120px
+				height: 50px
+				background-color: #fff
+				color: #383838
+				@include transition(0.2s)
+				&:hover
 					background-color: transparent
-					border: 1px solid rgba(173, 173, 173, 0.5)
-					color: #383838
-					box-shadow: none
-					font-size: 1.1rem
-					margin-bottom: 5px
-				.contactBtn
-					border-radius: 0
-					padding: 5px 120px
-					height: 50px
-					background-color: #fff
-					color: #383838
-					@include transition(0.2s)
-					&:hover
-						background-color: rgba(0,0,0,.30)
-						border: 1px solid #fff
-						color: #fff
-						// @include box-shadow-floor-big
-				textarea
-					height: 210px
-				.form-responses
-					padding-top: 30px
-					padding-bottom: 20px
+					border: 1px solid #fff
 					color: #fff
-					font-size: 1.5rem
-					i
-						font-size: 4rem
-					i.success
-						color: $light-green
-					i.error
-						color: $main-red
-					hr
-						margin-top: 60px
+					// @include box-shadow-floor-big
+			textarea
+				height: 210px
+			.form-responses
+				padding-top: 30px
+				padding-bottom: 20px
+				color: #fff
+				font-size: 1.5rem
+				i
+					font-size: 4rem
+				i.success
+					color: $light-green
+				i.error
+					color: $main-red
+				hr
+					margin-top: 60px
 
 	.social-icons
 		text-align: center
@@ -647,12 +766,12 @@ footer
 
 
 	.copyright
-		background-color: #404040
+		background-color: #0A1120
 		padding: 10px 5px
 		text-align: center
 		color: #fff
 		font-family: $font2
-		font-weight: 100
-		font-size: 1.1rem
+		font-weight: 400
+		font-size: 1.4rem
 
 

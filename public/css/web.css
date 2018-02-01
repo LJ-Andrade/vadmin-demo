@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);.productwrap {
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab|Lato:300,400|Nixie+One);.productwrap {
   width: 78%;
   float: right;
   background: rgba(245, 243, 243, 0.27);
@@ -257,7 +257,7 @@
   border-radius: 50px;
   white-space: nowrap;
   font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 400;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -287,7 +287,7 @@
   background-color: #CA5858;
   color: #fff;
   font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 400;
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
@@ -311,7 +311,7 @@
 .badgeGrey {
   background-color: #F8F8F8;
   font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 400;
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
@@ -335,7 +335,7 @@
   background-color: transparent;
   border: 1px solid #03c3ad;
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 400;
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
@@ -362,7 +362,7 @@
 .sqbadge-red {
   border-radius: 0;
   font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 400;
   margin: 3px 1px;
   -webkit-transition: all 0.2s ease 0s;
@@ -640,7 +640,7 @@
 }
 
 .catTit {
-  font-family: "Lato", sans-serif;
+  font-family: "Nixie One", cursive;
   font-size: 2em;
   font-weight: 400;
   font-style: italic;
@@ -652,13 +652,13 @@
 }
 
 .catSecTxt {
-  font-family: "Lato", sans-serif;
+  font-family: "Nixie One", cursive;
   font-style: normal;
   font-weight: 300;
 }
 
 .catSubtit {
-  font-family: "Lato", sans-serif;
+  font-family: "Nixie One", cursive;
   font-size: 1em;
   font-weight: 300;
   opacity: 0;
@@ -1021,34 +1021,34 @@ a:hover {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Lato", sans-serif;
+  font-family: "Nixie One", cursive;
 }
 
 h1 {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #BDD9EB;
 }
 
 h4 {
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .brd {
@@ -1131,11 +1131,11 @@ ul {
     margin-right: 5px;
   }
   .navbar .navbar-right li a {
-    font-family: "Lato", sans-serif;
+    font-family: "Josefin Slab", serif;
     font-weight: 400;
   }
   .navbar .navbar-right li a i {
-    font-family: "Lato", sans-serif;
+    font-family: "Nixie One", cursive;
     margin-right: 5px;
   }
   .navbar .navbar-nav > li {
@@ -1195,12 +1195,12 @@ ul {
   }
   .navbar.home-nav .navbar-nav > li:hover a {
     border: 1px solid #03c3ad;
-    color: #383838;
+    color: #fff;
   }
   .navbar.home-nav .navbar-nav > li:hover a.contacto {
     background-color: #3356e3;
     border: 0;
-    color: #383838;
+    color: #fff;
   }
   .navbar.change-nav {
     background-color: #fff;
@@ -1276,7 +1276,7 @@ ul {
   }
   .navbar-default .navbar-nav > li > a {
     color: #383838;
-    font-family: "Lato", sans-serif;
+    font-family: "Josefin Slab", serif;
     font-weight: 400;
     font-size: 1.5rem;
     padding-top: 10px;
@@ -1408,7 +1408,7 @@ ul {
 }
 
 .home-section-2 .big-text span {
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-size: 3.5rem;
   line-height: 5.1rem;
 }
@@ -1463,6 +1463,163 @@ ul {
   .home-section-2 .big-text span {
     font-size: 2rem;
     line-height: 3rem;
+  }
+}
+
+.home-mid-slider {
+  padding: 60px 10px;
+}
+
+.home-mid-slider .inner-text {
+  padding-top: 40px;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+}
+
+.home-section-3 {
+  background-color: #0d1d41;
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.home-section-3 .col-md-3 {
+  padding: 0;
+}
+
+.home-section-3 .text {
+  padding: 20px;
+}
+
+.home-section-3 .text p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.home-section-3 .divisor {
+  max-width: 100%;
+}
+
+.service-item {
+  padding: 50px 10px;
+}
+
+.our-services {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  color: #01406b;
+}
+
+.our-services .inner {
+  overflow: hidden;
+}
+
+.our-services .inner .column1 img {
+  max-width: 100%;
+}
+
+.our-services .inner .column2 p, .our-services .inner .column2 h1 {
+  text-align: left;
+}
+
+.our-services h1 {
+  text-align: center;
+}
+
+.our-services:hover {
+  cursor: move;
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.swiper-container-services .swiper-slide {
+  max-height: none;
+}
+
+.our-works {
+  padding: 40px 5px 30px;
+  background-color: #fff;
+  color: #0d1d41;
+  text-align: center;
+}
+
+.our-works .inner {
+  padding: 20px 20px 30px;
+  margin: auto;
+  text-align: right;
+}
+
+.our-works .inner h1 {
+  line-height: 3.3rem;
+  margin-bottom: 25px;
+}
+
+.our-works .inner p {
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.our-works .inner p.first {
+  margin-bottom: 20px;
+}
+
+.our-works .inner p.second {
+  margin-bottom: 10px;
+}
+
+.our-works .inner object, .our-works .inner img {
+  max-width: 100%;
+}
+
+.our-works .inner span {
+  font-size: 3rem;
+}
+
+.our-works .inner .btn {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.our-works .inner-mobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .our-works .inner {
+    padding: 10px 20px 0 0;
+  }
+  .our-works .inner h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 2.8rem;
+    font-size: 2rem;
+  }
+  .our-works .inner p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (max-width: 764px) {
+  .our-works .inner {
+    padding: 5px;
+    text-align: left;
+  }
+  .our-works .inner h1 {
+    margin-top: 0;
+    line-height: 2.8rem;
+    font-size: 2rem;
+  }
+  .our-works .inner p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  .our-works .inner-mobile {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .our-works .inner-desk {
+    display: none;
   }
 }
 
@@ -1535,7 +1692,7 @@ ul {
 }
 
 .portfolio-container .portfolio-item .inner .info .text {
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-size: 1rem;
   color: #393944;
   font-weight: 400;
@@ -1654,7 +1811,7 @@ ul {
     border-radius: 0;
   }
   .portfolio-filter .portfolio-filter-left .dropdown-items .badge {
-    font-family: "Lato", sans-serif;
+    font-family: "Josefin Slab", serif;
     font-weight: 400;
     font-size: 0.8rem;
     margin-right: 5px;
@@ -1838,6 +1995,10 @@ ul {
 }
 
 .contact-section {
+  background: #1ad4be;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #1ad4be), color-stop(100%, #3356e3));
+  background: linear-gradient(135deg, #1ad4be 0%, #3356e3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ad4be', endColorstr='#3356e3', GradientType=1 );
   padding: 30px 5px 60px;
 }
 
@@ -1848,17 +2009,17 @@ ul {
 
 .contact-section .contact-data span.mail {
   font-size: 2.5rem;
-  color: #383838;
+  color: #fff;
 }
 
 .contact-section .contact-data .phone {
   font-size: 2rem;
-  color: #383838;
+  color: #fff;
   margin-top: 20px;
 }
 
 .contact-section .contact-head-data {
-  color: #383838;
+  color: #fff;
   text-align: left;
   display: inline-block;
   width: 100%;
@@ -1867,7 +2028,7 @@ ul {
 }
 
 .contact-section .contact-head-data > div {
-  border-right: 1px solid #383838;
+  border-right: 1px solid #fff;
   padding: 0 30px;
 }
 
@@ -1880,7 +2041,7 @@ ul {
 }
 
 .contact-section .contact-head-data div.data-title {
-  font-family: "Lato", sans-serif;
+  font-family: "Nixie One", cursive;
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 5px;
@@ -1913,64 +2074,63 @@ ul {
   max-width: 880px;
 }
 
-.contact-section .inner .contact-form .inner form {
-  color: #383838;
+.contact-section .inner .contact-form form {
+  color: #fff;
   padding: 20px;
 }
 
-.contact-section .inner .contact-form .inner form > .col-md-6 {
+.contact-section .inner .contact-form form > .col-md-6 {
   padding: 0;
 }
 
-.contact-section .inner .contact-form .inner form .form-group {
+.contact-section .inner .contact-form form .form-group {
   margin-bottom: 0;
 }
 
-.contact-section .inner .contact-form .inner form ::-webkit-input-placeholder {
-  color: #383838;
-  font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+.contact-section .inner .contact-form form ::-webkit-input-placeholder {
+  color: #f9f9f9;
+  font-size: 1.3rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
 }
 
-.contact-section .inner .contact-form .inner form ::-moz-placeholder {
-  color: #383838;
-  font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+.contact-section .inner .contact-form form ::-moz-placeholder {
+  color: #f9f9f9;
+  font-size: 1.3rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
 }
 
-.contact-section .inner .contact-form .inner form ::-ms-input-placeholder {
-  color: #383838;
-  font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+.contact-section .inner .contact-form form ::-ms-input-placeholder {
+  color: #f9f9f9;
+  font-size: 1.3rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
 }
 
-.contact-section .inner .contact-form .inner form ::-moz-placeholder {
-  color: #383838;
-  font-size: 1.1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+.contact-section .inner .contact-form form ::-moz-placeholder {
+  color: #f9f9f9;
+  font-size: 1.3rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
 }
 
-.contact-section .inner .contact-form .inner input {
-  height: 40px;
+.contact-section .inner .contact-form input {
+  height: 70px;
 }
 
-.contact-section .inner .contact-form .inner input, .contact-section .inner .contact-form .inner textarea {
+.contact-section .inner .contact-form input, .contact-section .inner .contact-form textarea {
   border: 0;
   border-radius: 0;
   background-color: transparent;
-  border: 1px solid rgba(173, 173, 173, 0.5);
-  color: #383838;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
-.contact-section .inner .contact-form .inner .contactBtn {
+.contact-section .inner .contact-form .contactBtn {
   border-radius: 0;
   padding: 5px 120px;
   height: 50px;
@@ -1980,36 +2140,36 @@ ul {
   transition: all 0.2s ease 0s;
 }
 
-.contact-section .inner .contact-form .inner .contactBtn:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.contact-section .inner .contact-form .contactBtn:hover {
+  background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
 }
 
-.contact-section .inner .contact-form .inner textarea {
+.contact-section .inner .contact-form textarea {
   height: 210px;
 }
 
-.contact-section .inner .contact-form .inner .form-responses {
+.contact-section .inner .contact-form .form-responses {
   padding-top: 30px;
   padding-bottom: 20px;
   color: #fff;
   font-size: 1.5rem;
 }
 
-.contact-section .inner .contact-form .inner .form-responses i {
+.contact-section .inner .contact-form .form-responses i {
   font-size: 4rem;
 }
 
-.contact-section .inner .contact-form .inner .form-responses i.success {
+.contact-section .inner .contact-form .form-responses i.success {
   color: #03c3ad;
 }
 
-.contact-section .inner .contact-form .inner .form-responses i.error {
+.contact-section .inner .contact-form .form-responses i.error {
   color: #D77777;
 }
 
-.contact-section .inner .contact-form .inner .form-responses hr {
+.contact-section .inner .contact-form .form-responses hr {
   margin-top: 60px;
 }
 
@@ -2024,7 +2184,7 @@ ul {
 
 .contact-section .social-icons span {
   font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 400;
   color: #fff;
 }
@@ -2154,7 +2314,7 @@ footer .footer h2 {
 
 footer .footer .contact-data span {
   font-size: 1.2rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Josefin Slab", serif;
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -2179,11 +2339,11 @@ footer .footer .social #u_0_3 {
 }
 
 footer .copyright {
-  background-color: #404040;
+  background-color: #0A1120;
   padding: 10px 5px;
   text-align: center;
   color: #fff;
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-size: 1.1rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }

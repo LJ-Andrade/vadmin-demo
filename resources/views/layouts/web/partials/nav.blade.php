@@ -12,7 +12,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ url('/') }}">Inicio</a></li>
-                <li><a href="{{ route('store') }}">Catálogo</a></li>
+                <li><a href="{{ route('web.portfolio') }}">Portfolio</a></li>
                 <li><a class="contacto" href="{{ url('/#contact') }}"><i class="ion-ios-email-outline"></i> Contacto</a></li>   
             </ul>
         </div>
